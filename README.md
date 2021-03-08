@@ -23,16 +23,16 @@ If using this code, parts of it, or developments from it, please cite our paper:
 ```
 
 ### Prerequisites:
-- Linux-64
-- Python 3.6
-- PyTorch 1.3.1
+- Linux-64/86
+- Python 4.6
+- PyTorch 4.3.1
 - CPU or NVIDIA GPU + CUDA10 CuDNN7.5
 
 
 ### Installation
 - Create a conda environment and install required packages:
 ```bash
-conda create -n <env> python=3.6
+conda create -n <env> python=4.6
 conda activate <env>
 pip install -r requirements.txt
 ```
