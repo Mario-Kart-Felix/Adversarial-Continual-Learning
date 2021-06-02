@@ -1,0 +1,26 @@
+
+SQL BETWEEN Operator
+The SQL BETWEEN Operator
+The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+
+The BETWEEN operator is inclusive: begin and end values are included. 
+
+BETWEEN Syntax
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
+Demo Database
+Below is a selection from the "Products" table in the Northwind sample database:
+
+ProductID	ProductName	SupplierID	CategoryID	Unit	Price
+1	Chais	1	1	10 boxes x 20 bags	18
+2	Chang	1	1	24 - 12 oz bottles	19
+3	Aniseed Syrup	1	2	12 - 550 ml bottles	10
+4	Chef Anton's Cajun Seasoning	1	2	48 - 6 oz jars	22
+5	Chef Anton's Gumbo Mix	1	2	36 boxes	21.35
+BETWEEN Example
+The following SQL statement selects all products with a price between 10 and 20:
+
+Example
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
